@@ -1,0 +1,30 @@
+[
+  {
+    "pregunta": "¿Qué es la contaminación?",
+    "respuesta": "La contaminación es la introducción de sustancias o energías en el medio ambiente que causan efectos negativos para la salud de los seres vivos y el equilibrio de los ecosistemas."
+  },
+  {
+    "pregunta": "Tipos de contaminación",
+    "respuesta": "Existen varios tipos de contaminación: contaminación del aire, del agua, del suelo, acústica y lumínica. Cada una tiene efectos negativos distintos sobre el planeta y la salud humana."
+  },
+  {
+    "pregunta": "¿Qué es el cambio climático?",
+    "respuesta": "El cambio climático se refiere a variaciones a largo plazo en los patrones del clima de la Tierra, principalmente debido a la actividad humana que aumenta los gases de efecto invernadero."
+  },
+  {
+    "pregunta": "Causas de la contaminación del aire",
+    "respuesta": "La contaminación del aire es causada principalmente por la quema de combustibles fósiles, emisiones industriales, vehículos motorizados y la deforestación."
+  },
+  {
+    "pregunta": "Consecuencias de la contaminación",
+    "respuesta": "La contaminación provoca problemas de salud, pérdida de biodiversidad, destrucción de ecosistemas y contribuye al cambio climático."
+  },
+  {
+    "pregunta": "Formas de reducir la contaminación",
+    "respuesta": "Se puede reducir la contaminación mediante el reciclaje, uso de energías renovables, transporte sostenible, reforestación y educación ambiental."
+  },
+  {
+    "pregunta": "¿Qué son los gases de efecto invernadero?",
+    "respuesta": "Los gases de efecto invernadero son aquellos que retienen el calor en la atmósfera, como el dióxido de carbono, metano y óxidos de nitrógeno, contribuyendo al calentamiento global."
+  }
+]
