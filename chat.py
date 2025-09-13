@@ -9,7 +9,7 @@ with open(DATASET_PATH, "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 HF_TOKEN = os.getenv("HF_TOKEN")
-API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
+API_URL = "https://api-inference.huggingface.co/models/Novaciano/QwQ-0.5B-Distilled_and_Uncensored-GGUF"
 headers = {"Authorization": f"Bearer " + HF_TOKEN} if HF_TOKEN else {}
 
 def buscar_dataset(user_message):
