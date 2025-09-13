@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat IA - Contaminación</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; }
+    #chatbox { width: 400px; margin: 50px auto; padding: 20px; background: white; border-radius: 10px; }
+    #messages { height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+    .msg { margin: 5px 0; }
+    .user { font-weight: bold; color: #1a73e8; }
+    .bot { font-weight: bold; color: green; }
+  </style>
+</head>
+<body>
+  <div id="chatbox">
+    <h2>Chat sobre Contaminación 🌍</h2>
+    <div id="messages"></div>
+    <input type="text" id="input" placeholder="Escribe tu pregunta...">
+    <button onclick="sendMessage()">Enviar</button>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById("input");
+      const message = input.value;
+      if (!message) return;
+
+      const messagesDiv = document.getElementById("messages");
+      messagesDiv.innerHTML += `<div class="msg user">Tú: ${message}</div>`;
+      input.value = "";
+
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await response.json();
+      messagesDiv.innerHTML += `<div class="msg bot">IA: ${data.reply}</div>`;
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
+  </script>
+</body>
+</html>
